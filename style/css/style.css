@@ -1,43 +1,46 @@
 .words {
   display: flex;
+  overflow: hidden;
+  align-items: baseline;
+  height: 40px;
 }
 
 .word {
   display: block;
-  height: 100%;
   padding: 6px;
+  overflow: hidden;
   animation: animate 7s infinite;
 }
 
 @keyframes animate {
   10% {
-    transform: translateY(-102%);
-  }
-  20% {
     transform: translateY(-100%);
   }
-  30% {
-    transform: translateY(-202%);
+  20% {
+    transform: translateY(-102%);
   }
-  40% {
+  30% {
     transform: translateY(-200%);
   }
-  50% {
-    transform: translateY(-302%);
+  40% {
+    transform: translateY(-202%);
   }
-  60% {
+  50% {
     transform: translateY(-300%);
   }
-  70% {
-    transform: translateY(-402%);
+  60% {
+    transform: translateY(-302%);
   }
-  80% {
+  70% {
     transform: translateY(-400%);
   }
+  80% {
+    transform: translateY(-402%);
+  }
   90% {
-    transform: translateY(-502%);
+    transform: translateY(-500%);
   }
   100% {
-    transform: translateY(-500%);
+    transform: translateY(-502%);
   }
 }
