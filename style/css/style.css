@@ -51,6 +51,13 @@
   }
 }
 .brush {
+  padding: 50px;
+}
+.brush .brush::before {
+  background-image: none;
+}
+
+.brush:hover {
   background-image: url(../../img/brushstrokePurple.png);
   background-repeat: no-repeat;
   background-position: center;
