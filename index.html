@@ -16,21 +16,31 @@
 </head>
 
 <body>
-  <header class="flex justify-between ">
-    <h1><img src="" alt="" /></h1>
-    <ul class="flex my-6">
-      <li class="brush text-3xl mx-11"><a href="index.html">Acceuil</a></li>
-      <li class="text-2xl">|</li>
-      <li class="text-3xl mx-11"><a href="index.html"><a href="folio.html">Portfolio</a></li>
-      <li class="text-2xl">|</li>
-      <li class="text-3xl mx-11 bg-ima"><a href="index.html"><a href="about.html">À propos</a></li>
-      <li class="text-2xl">|</li>
-      <li class="text-3xl mx-11"><a href="index.html"><a href="contact.html">Contact</a></li>
-    </ul>
+  <header class="grid grid-cols-12">
+    <div class=" col-span-12 m-auto">
+      <ul class="flex my-6">
+        <div class="brushPurple border-r">
+          <li class="text-3xl mx-11"><a href="index.html">Acceuil</a></li>
+        </div>
+
+        <div class="brushGreen border-r">
+          <li class="text-3xl mx-11"><a href="index.html"><a href="folio.html">Portfolio</a></li>
+        </div>
+
+        <div class="brushBlue border-r">
+          <li class="text-3xl mx-11 bg-ima"><a href="index.html"><a href="about.html">À propos</a></li>
+        </div>
+
+        <div class="brushOrange">
+          <li class="text-3xl mx-11"><a href="index.html"><a href="contact.html">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+
   </header>
 
   <main>
-    <section class="grid grid-cols-12 bg-[url(/img/mermaid-rkzrz4.jpg)] bg-center h-[900px] m-3">
+    <section class="grid grid-cols-12 bg-[url(/img/mermaid-rkzrz4.jpg)] bg-center bg-fixed bg-no-repeat h-[900px] m-10">
       <div class="col-span-12 m-auto">
         <h2 class="words text-5xl text-white mask-none">
           Besoin

@@ -51,27 +51,114 @@
   }
 }
 
-.brush {
+.brushPurple {
+  position: relative;
+  display: inline-block;
+  background: url("../../img/brushstrokePurple.png") center/cover no-repeat;
   padding: 50px;
-  .brush::before {
-    background-image: none;
+  overflow: hidden;
+  &:hover::after {
+    transform: translateX(100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
   }
 }
 
-.brush:hover {
-  background-image: url(../../img/brushstrokePurple.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.brushGreen {
+  position: relative;
+  display: inline-block;
+  background: url("../../img/brushstrokeGreen.png") center/cover no-repeat;
   padding: 50px;
-  background-size: 100%;
-  animation: animate2 1s ease 0s;
+  overflow: hidden;
+  &:hover::after {
+    transform: translateX(100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+  }
 }
 
-@keyframes animate2 {
-  from {
-    opacity: 0%;
+.brushBlue {
+  position: relative;
+  display: inline-block;
+  background: url("../../img/brushstrokeBlue.png") center/cover no-repeat;
+  padding: 50px;
+  overflow: hidden;
+  &:hover::after {
+    transform: translateX(100%);
   }
-  to {
-    opacity: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.brushOrange {
+  position: relative;
+  display: inline-block;
+  background: url("../../img/brushstrokeOrange.png") center/cover no-repeat;
+  padding: 50px;
+  overflow: hidden;
+  &:hover::after {
+    transform: translateX(100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
   }
 }
