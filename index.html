@@ -15,24 +15,26 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-  <header class="grid grid-cols-12">
+<body class="p-0 bg-[#010409]">
+  <header class="grid grid-cols-12 bg-[#161b22]">
     <div class=" col-span-12 m-auto">
       <ul class="flex my-6">
         <div class="brushPurple border-r">
-          <li class="text-3xl mx-11"><a href="index.html">Acceuil</a></li>
+          <li class="navBar__link mx-11 "><a href="index.html" class="text-white">Acceuil</a></li>
         </div>
 
         <div class="brushGreen border-r">
-          <li class="text-3xl mx-11"><a href="index.html"><a href="folio.html">Portfolio</a></li>
+          <li class="navBar__link mx-11"><a href="index.html"><a href="folio.html " class="text-white">Portfolio</a>
+          </li>
         </div>
 
         <div class="brushBlue border-r">
-          <li class="text-3xl mx-11 bg-ima"><a href="index.html"><a href="about.html">À propos</a></li>
+          <li class="navBar__link mx-11 bg-ima"><a href="index.html"><a href="about.html" class="text-white">A propo</a>
+          </li>
         </div>
 
         <div class="brushOrange">
-          <li class="text-3xl mx-11"><a href="index.html"><a href="contact.html">Contact</a></li>
+          <li class="navBar__link mx-11"><a href="index.html"><a href="contact.html" class="text-white">Contact</a></li>
         </div>
       </ul>
     </div>
@@ -40,8 +42,8 @@
   </header>
 
   <main>
-    <section class="grid grid-cols-12 bg-[url(/img/mermaid-rkzrz4.jpg)] bg-center bg-fixed bg-no-repeat h-[900px] m-10">
-      <div class="col-span-12 m-auto">
+    <section class="grid grid-cols-12 bg-[url(/img/mermaid-rkzrz4.jpg)] bg-center  bg-no-repeat h-[900px] m-10">
+      <div class="col-span-12 m-auto relative">
         <h2 class="words text-5xl text-white mask-none">
           Besoin
           <div>
@@ -53,7 +55,7 @@
             <span class="word"> d'une Illustration</span>
           </div>
         </h2>
-        <button>Contactez moi</button>
+        <a href="contact.html">Contactez moi</a>
       </div>
     </section>
 
@@ -64,22 +66,22 @@
             <div class="swiper-wrapper mb-16">
               <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                  <span class="text-2xl font-semibold text-indigo-600">Slide 1 </span>
+                  <img src="img/lucascolor-rkzryn.jpg" alt="Portrait d'un client">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                  <span class="text-2xl font-semibold text-indigo-600">Slide 2 </span>
+                  <img src="img/raccoon-rofvrx.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                  <span class="text-2xl font-semibold text-indigo-600">Slide 3 </span>
+                  <img src="img/eko1-rkzry6.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-                  <span class="text-2xl font-semibold text-indigo-600">Slide 4 </span>
+                  <img src="img/supra-rkzrwb.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -99,15 +101,16 @@
         </div>
     </section>
 
-    <section class="containeur grid grid-cols-12 grid-rows-3 gap-3">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-1 row-start-1 row-end-3">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-4 row-start-1 row-end-2">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-7 row-start-1 row-end-3">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-10 row-start-1 row-end-2">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-1 row-start-3 row-end-4">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-4 row-start-2 row-end-4">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-7 row-start-3 row-end-4">
-      <img src="https://placehold.co/600x400" alt="" class="col-span-3 col-start-10 row-start-2 row-end-4">
+    <section class="bg-[#161b22] grid grid-cols-12 grid-rows-3 gap-3">
+      <div class=" col-span-6 col-start-4">
+        <h2 class="text-white text-4xl text-center my-10">A propo</h2>
+        <p class="text-white text-2xl text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Impedit
+          suscipit cum vel
+          itaque explicabo, neque,
+          consequatur saepe quis omnis aut doloribus eos mollitia id sequi. Dignissimos odit doloremque cupiditate!
+          Labore?</p>
+      </div>
     </section>
 
   </main>

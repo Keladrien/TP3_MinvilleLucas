@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Flower;
+  src: url();
+}
+
 .containeur {
   max-width: 1280px;
   width: 90%;
@@ -57,9 +62,11 @@
   background: url("../../img/brushstrokePurple.png") center/cover no-repeat;
   padding: 50px;
   overflow: hidden;
+
   &:hover::after {
     transform: translateX(100%);
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -67,7 +74,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #161b22;
     transition: transform 0.2s ease;
     transform: translateX(0);
   }
@@ -85,6 +92,7 @@
   background: url("../../img/brushstrokeGreen.png") center/cover no-repeat;
   padding: 50px;
   overflow: hidden;
+
   &:hover::after {
     transform: translateX(100%);
   }
@@ -95,7 +103,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #161b22;
     transition: transform 0.2s ease;
     transform: translateX(0);
   }
@@ -113,6 +121,7 @@
   background: url("../../img/brushstrokeBlue.png") center/cover no-repeat;
   padding: 50px;
   overflow: hidden;
+
   &:hover::after {
     transform: translateX(100%);
   }
@@ -123,7 +132,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #161b22;
     transition: transform 0.2s ease;
     transform: translateX(0);
   }
@@ -141,6 +150,7 @@
   background: url("../../img/brushstrokeOrange.png") center/cover no-repeat;
   padding: 50px;
   overflow: hidden;
+
   &:hover::after {
     transform: translateX(100%);
   }
@@ -151,7 +161,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #161b22;
     transition: transform 0.2s ease;
     transform: translateX(0);
   }
@@ -161,4 +171,9 @@
     position: relative;
     z-index: 1;
   }
+}
+
+.navBar__link {
+  font-family: Flower;
+  font-size: 3rem;
 }
