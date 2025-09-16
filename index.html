@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ekosysthem</title>
   <meta name="description" content="Ekosysthem, Graphiste, Illustratrice" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style/css/style.css" />
   <link rel="stylesheet" href="style/css/carousel.css">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="p-0 bg-[#010409]">
@@ -55,7 +56,12 @@
             <span class="word"> d'une Illustration</span>
           </div>
         </h2>
-        <a href="contact.html">Contactez moi</a>
+        <div class="py-5">
+          <a href="contact.html"
+            class="text-2xl text-white border-solid underline:hover bg-[#b4959e] rounded-2xl p-5 ">Contactez
+            moi</a>
+        </div>
+
       </div>
     </section>
 
@@ -117,33 +123,34 @@
 
   <hr class="text-white my-10">
 
-  <footer>
-    <ul>
+  <footer class="grid grid-cols-12">
+    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5">Retrouvez moi sur</p>
+    <ul class="flex justify-between mx-20 col-span-12">
       <li>
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
-          <img src="img/icon/ko-fi icon.webp" alt="ko-fi Icon">
+          <img src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[150px]">
         </a>
       </li>
       <li>
         <a href="https://artistree.io/ekosysthem" target="_blank">
-          <img src="img/icon/artistree icon.svg" alt="Artistree icon">
+          <img src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[200px]">
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/ekosysthem/" target="_blank">
-          <img src="img/icon/instagram.png" alt="Instagram Icon">
+          <img src="img/icon/instagram.png" alt="Instagram Icon " class="w-[100px]">
         </a>
       </li>
 
       <li>
         <a href="https://www.twitch.tv/ekosysthem" target="_blank">
-          <img src="img/icon/twitch.png" alt="twitch icon">
+          <img src="img/icon/twitch.png" alt="twitch icon" class="w-[100px]">
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/@Ekosysthem" target="_blank">
-          <img src="img/icon/youtube.png" alt="Youtube icon">
+          <img src="img/icon/youtube.png" alt="Youtube icon" class="w-[100px]">
         </a>
       </li>
     </ul>
