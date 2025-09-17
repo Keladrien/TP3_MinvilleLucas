@@ -4,35 +4,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="style/css/style.css" />
   <title>Ekosysthem</title>
   <meta name="description" content="Ekosysthem, Graphiste, Illustratrice" />
+
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style/css/style.css" />
+  <link rel="stylesheet" href="style/css/carousel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-  <header class="grid grid-cols-12">
+<body class="p-0 bg-[#010409]">
+  <header class="grid grid-cols-12 bg-[#161b22]">
     <div class=" col-span-12 m-auto">
       <ul class="flex my-6">
         <div class="brushPurple border-r">
-          <li class="navBar__link mx-11"><a href="index.html">Acceuil</a></li>
+          <li class="navBar__link mx-11 "><a href="index.html" class="text-white">Acceuil</a></li>
         </div>
 
         <div class="brushGreen border-r">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="folio.html">Portfolio</a></li>
+          <li class="navBar__link mx-11"><a href="index.html"><a href="folio.html " class="text-white">Portfolio</a>
+          </li>
         </div>
 
         <div class="brushBlue border-r">
-          <li class="navBar__link mx-11 bg-ima"><a href="index.html"><a href="about.html">A propo</a></li>
+          <li class="navBar__link mx-11 bg-ima"><a href="index.html"><a href="about.html" class="text-white">A propo</a>
+          </li>
         </div>
 
         <div class="brushOrange">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="contact.html">Contact</a></li>
+          <li class="navBar__link mx-11"><a href="index.html"><a href="contact.html" class="text-white">Contact</a></li>
         </div>
       </ul>
     </div>
 
   </header>
+
+  <main class="grid grid-cols-12 ">
+    <aside class="bg-[#2f3742] col-span-3 mr-10 rounded-br-2xl rounded-tr-2xl">
+      <ul class="fixed mt-10 ml-5">
+        <li class="text-4xl text-white">
+          <a href="#Illustration">Illustration</a>
+
+          <ul>
+            <li class="text-3xl">
+              <a href="#Portrait">- Portrait</a>
+            </li>
+            <li class="text-3xl">
+              <a href="#Half/FullBody">- Half/Full Body</a>
+            </li>
+          </ul>
+        </li>
+        <li class="text-4xl text-white mt-5">
+          <a href="#MiseEnPage">Mise en page</a>
+
+      </ul>
+    </aside>
+
+    <div class="col-span-9 mr-10">
+
+      <section id="Illustration">
+
+        <section id="Portrait">
+          <h2 class="text-5xl text-white my-10">Portrait</h2>
+          <div class="grid grid-cols-12 gap-3">
+            <img src="img/lucascolor-rkzryn.jpg" alt="Portrait d'un client" class="rounded-3xl col-span-4 row-span-2">
+            <img src="img/mothernature1-rkzrzk.jpg" alt="Mère Nature" class="rounded-3xl col-span-4 row-span-2">
+            <img src="img/mermaid-rkzrz4.jpg" alt="Une sirène" class="rounded-3xl col-span-4 row-span-1">
+            <img src="img/snail-rkzryu.jpg" alt="Escargot sur un visage" class="rounded-3xl col-span-4 row-span-3">
+            <img src="img/motherhyena1-rkzrze.jpg" alt="La mère de hyenne" class="rounded-3xl col-span-4 row-span-1">
+            <img src="img/eko1-rkzry6.jpg" alt="Autoportrait" class="rounded-3xl col-span-4 row-span-2">
+          </div>
+        </section>
+
+        <section id="Half/FullBody">
+          <h2 class="text-5xl text-white my-10">Half/Full Body</h2>
+          <div class="grid grid-cols-12 gap-3">
+            <img src="img/megan-rkbr8u.png" alt="Commision personnage DnD" class="rounded-3xl col-span-4 row-span-2">
+            <img src="img/zombie-rkzrwq.jpg" alt="Zombie" class="rounded-3xl col-span-4 row-span-3">
+            <img src="img/raccoon-rofvrx.jpg" alt="Raton Shaman" class="rounded-3xl col-span-4 row-span-2">
+            <img src="img/supra-rkzrwb.jpg" alt="Bring back pop-up light" class="rounded-3xl col-span-4 row-span-2">
+          </div>
+
+        </section>
+
+      </section>
+
+      <section id="MiseEnPage">
+        <h2 class="text-5xl text-white my-10">Mise en page</h2>
+        <div class="grid grid-cols-12 gap-3">
+          <img src="img/alchatmiste.jpg" alt="Mise en page d'une couverture de livre"
+            class="rounded-3xl col-span-4 row-span-3">
+          <img src="img/recette.jpg" alt="Mise en page d'un livre de recette" class="rounded-3xl col-span-4 row-span-3">
+          <img src="img/maquette.jpg" alt="Mise en page d'un site web" class="rounded-3xl col-span-4 row-span-3">
+        </div>
+
+      </section>
+
+
+      </section>
+
+
+    </div>
+  </main>
+
+  <hr class="text-white my-10">
+
+  <footer class="grid grid-cols-12">
+    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5">Retrouvez moi sur</p>
+    <ul class="flex justify-between mx-20 col-span-12">
+      <li>
+        <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
+          target="_blank">
+          <img src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[150px]">
+        </a>
+      </li>
+      <li>
+        <a href="https://artistree.io/ekosysthem" target="_blank">
+          <img src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[200px]">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/ekosysthem/" target="_blank">
+          <img src="img/icon/instagram.png" alt="Instagram Icon " class="w-[100px]">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.twitch.tv/ekosysthem" target="_blank">
+          <img src="img/icon/twitch.png" alt="twitch icon" class="w-[100px]">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@Ekosysthem" target="_blank">
+          <img src="img/icon/youtube.png" alt="Youtube icon" class="w-[100px]">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="scripts/carousel.js"></script>
 </body>
 
 </html>
