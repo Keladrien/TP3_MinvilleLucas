@@ -42,51 +42,67 @@
 
   </header>
 
-  <main>
-    <h2>Contact</h2>
+  <main class="containeur">
 
     <form action="">
-      <legend>
-        <div>
-          <label for=""></label>
-          <input type="text">
+      <fieldset class="border-white border-solid border-2 my-10 grid grid-cols-12 gap-3 rounded-2xl p-6">
+        <legend>
+          <h2 class="text-2xl text-white mx-2">Contact</h2>
+        </legend>
+        <div class="col-span-6 ml-3">
+          <label for="FirstName" hidden>Prénom</label>
+          <input type="text" name="FirstName" id="FirstName" placeholder="Prénom"
+            class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-6 mr-3">
+          <label for="Nom" hidden>Nom</label>
+          <input type="text" name="Nom" id="Nom" placeholder="Nom" class="bg-[#2f3742] w-[100%] h-15  p-3 text-white">
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-12 mx-3">
+          <label for="email" hidden>Courriel</label>
+          <input type="email" name="email" id="email" placeholder="Courriel"
+            class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-12 mx-3">
+          <label for="textArea" hidden>Description</label>
+          <textarea name="textArea" id="textArea" placeholder="Description"
+            class="bg-[#2f3742] w-[100%] h-40 p-3 text-white"></textarea>
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class=" col-span-6 ml-3">
+          <select name="Produit" id="Produit" class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
+            <option value="" disabled selected>Produit</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Half/Full Body">Half/Full Body</option>
+            <option value="Mise en page">Mise en page</option>
+          </select>
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-6 col-start-7 mr-3">
+          <label for="dateLimite" hidden>Date Limite</label>
+          <input type="date" name="dateLimite" id="dateLimite" class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-6 ml-3">
+          <input type="radio" id="digital" name="radioType" checked>
+          <label for="digital" class="text-white">Digital</label>
+
+
+          <input type="radio" id="physical" name="radioType">
+          <label for="physical" class="text-white">Physique</label>
         </div>
 
-        <div>
-          <label for=""></label>
-          <input type="text">
+        <div class="col-span-6 mr-3">
+          <input type="checkbox" id="condition" name="condition">
+          <label for="condition" class="text-white">J'accepte les conditions</label>
         </div>
-      </legend>
+
+        <input type="submit" value="Soumettre"
+          class="bg-[#3f7a3f] w-[100%] h-15 p-3 text-white col-span-4 col-start-5 rounded-2xl underline:hover">
+      </fieldset>
     </form>
   </main>
 
