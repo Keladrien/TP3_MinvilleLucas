@@ -9,11 +9,9 @@
 
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style/css/style.css" />
-  <link rel="stylesheet" href="style/css/carousel.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body class="p-0 bg-[#010409]">
@@ -45,46 +43,50 @@
 
   <main class="containeur">
 
-    <form action="">
+    <form id="form" action="" novalidate onsubmit="return validateForm()">
       <fieldset class="border-white border-solid border-2 my-10 grid grid-cols-12 gap-3 rounded-2xl p-6">
         <legend>
           <h2 class="text-2xl text-white mx-2">Contact</h2>
         </legend>
-        <div class="col-span-6 ml-3">
-          <label for="FirstName" hidden>Prénom</label>
-          <input type="text" name="FirstName" id="FirstName" placeholder="Prénom"
-            class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
+        <div class="inputControl col-span-6 ml-3">
+          <label for="firstName" hidden>Prénom</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Prénom" class="form__input">
+          <div class="errorMessage"></div>
         </div>
 
-        <div class="col-span-6 mr-3">
-          <label for="Nom" hidden>Nom</label>
-          <input type="text" name="Nom" id="Nom" placeholder="Nom" class="bg-[#2f3742] w-[100%] h-15  p-3 text-white">
+        <div class="inputControl col-span-6 mr-3">
+          <label for="lastName" hidden>Nom</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Nom" class="form__input">
+          <div class="errorMessage"></div>
         </div>
 
-        <div class="col-span-12 mx-3">
-          <label for="email" hidden>Courriel</label>
-          <input type="email" name="email" id="email" placeholder="Courriel"
-            class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
+        <div class="inputControl col-span-12 mx-3">
+          <label for="mail" hidden>Courriel</label>
+          <input type="email" name="mail" id="mail" placeholder="Courriel" class="form__input">
+          <div class="errorMessage"></div>
         </div>
 
-        <div class="col-span-12 mx-3">
+        <div class="textAreaControl col-span-12 mx-3">
           <label for="textArea" hidden>Description</label>
-          <textarea name="textArea" id="textArea" placeholder="Description"
-            class="bg-[#2f3742] w-[100%] h-40 p-3 text-white"></textarea>
+          <textarea name="textArea" id="textArea" placeholder="Description" class="form__input--textArea"></textarea>
+          <div class="errorMessage"></div>
         </div>
 
-        <div class=" col-span-6 ml-3">
-          <select name="Produit" id="Produit" class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
-            <option value="" disabled selected>Produit</option>
+        <div class="selectControl col-span-6 ml-3">
+          <select name="produit" id="produit" class="form__input">
+            <option value="notSelected" disabled selected>Produit</option>
             <option value="Portrait">Portrait</option>
             <option value="Half/Full Body">Half/Full Body</option>
             <option value="Mise en page">Mise en page</option>
           </select>
+          <div class="errorMessage"></div>
         </div>
 
-        <div class="col-span-6 col-start-7 mr-3">
+        <div class="inputControl col-span-6 col-start-7 mr-3">
           <label for="dateLimite" hidden>Date Limite</label>
-          <input type="date" name="dateLimite" id="dateLimite" class="bg-[#2f3742] w-[100%] h-15 p-3 text-white">
+          <input type="text" name="dateLimite" id="dateLimite" placeholder="Date Limite" class=" form__input"
+            onfocus="(this.type='date') (this.showPicker())">
+          <div class="errorMessage"></div>
         </div>
 
         <div class="col-span-6 ml-3">
@@ -96,15 +98,16 @@
           <label for="physical" class="text-white">Physique</label>
         </div>
 
-        <div class="col-span-6 mr-3">
+        <div class="conditionControl col-span-6 mr-3">
           <input type="checkbox" id="condition" name="condition">
           <label for="condition" class="text-white">J'accepte les conditions</label>
+          <div class="errorMessage"></div>
         </div>
 
-        <input type="submit" value="Soumettre"
-          class="bg-[#3f7a3f] w-[100%] h-15 p-3 text-white col-span-4 col-start-5 rounded-2xl underline:hover">
+        <input type="submit" value="Soumettre" class=" col-span-4 col-start-5 main__btn">
       </fieldset>
     </form>
+
   </main>
 
   <hr class="text-white my-10">
@@ -142,7 +145,7 @@
     </ul>
   </footer>
 
-  <script src="scripts/carousel.js"></script>
+  <script src="scripts/validation.js"></script>
 </body>
 
 </html>

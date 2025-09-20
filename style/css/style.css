@@ -166,3 +166,86 @@
   font-family: Flower;
   font-size: 2rem;
 }
+
+.main__btn {
+  background-color: #3f7a3f;
+  width: 100%;
+  height: 60px;
+  padding: 12px;
+  color: white;
+  border-radius: 1rem;
+}
+.main__btn:hover {
+  text-decoration: underline;
+  background-color: #356635;
+  cursor: pointer;
+}
+
+.form__input {
+  background-color: #2f3742;
+  width: 100%;
+  height: 60px;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+}
+.form__input--textArea {
+  background-color: #2f3742;
+  width: 100%;
+  height: 10rem;
+  padding: 12px;
+  color: white;
+}
+.form__input--textArea:hover {
+  border: white solid 1px;
+}
+.form__input:hover {
+  border: white solid 1px;
+}
+
+.inputControl.success input {
+  border: #09c372 solid 1px;
+}
+.inputControl.error input {
+  border: #ff3860 solid 1px;
+}
+.inputControl .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 1rem;
+}
+
+.selectControl.success select {
+  border: #09c372 solid 1px;
+}
+.selectControl.error select {
+  border: #ff3860 solid 1px;
+}
+.selectControl .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 1rem;
+}
+
+.conditionControl.success label {
+  color: #09c372;
+}
+.conditionControl.error label {
+  color: #ff3860;
+}
+.conditionControl .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 1rem;
+}
+
+.textAreaControl.success textarea {
+  border: #09c372 solid 1px;
+}
+.textAreaControl.error textarea {
+  border: #ff3860 solid 1px;
+}
+.textAreaControl .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 1rem;
+}
