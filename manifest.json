@@ -9,37 +9,37 @@
   {
     "purpose": "maskable",
     "sizes": "1440x1440",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon.png",
+    "src": "img/maskableIcon/maskable_icon.png",
     "type": "image/png"
   },
   {
     "purpose": "maskable",
     "sizes": "48x48",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x48.png",
+    "src": "img/maskableIcon/maskable_icon_x48.png",
     "type": "image/png"
   },
   {
     "purpose": "maskable",
     "sizes": "72x72",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x72.png",
+    "src": "../img/maskableIcon/maskable_icon_x72.png",
     "type": "image/png"
   },
   {
     "purpose": "maskable",
     "sizes": "96x96",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x96.png",
+    "src": "./img/maskableIcon/maskable_icon_x96.png",
     "type": "image/png"
   },
   {
     "purpose": "maskable",
     "sizes": "128x128",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x128.png",
+    "src": "./TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x128.png",
     "type": "image/png"
   },
   {
     "purpose": "maskable",
     "sizes": "192x192",
-    "src": "/TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x192.png",
+    "src": "../TP3_MinvilleLucas/img/maskableIcon/maskable_icon_x192.png",
     "type": "image/png"
   },
   {
