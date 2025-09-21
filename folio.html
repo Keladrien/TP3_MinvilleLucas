@@ -9,10 +9,9 @@
 
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style/css/style.css" />
-  <link rel="stylesheet" href="style/css/carousel.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -21,22 +20,25 @@
     <div class=" col-span-12 m-auto">
       <ul class="flex my-6">
         <div class="brushPurple border-r">
-          <li class="navBar__link mx-11 "><a href="index.html" class="text-white">Acceuil</a></li>
+          <li class="navBar__link mx-11 "><a href="index.html" class="text-white titleFont text-5xl">Acceuil</a></li>
         </div>
 
         <div class="brushGreen border-r">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="folio.html " class="text-white">Portfolio</a>
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="folio.html "
+                class="text-white titleFont text-5xl">Portfolio</a>
           </li>
         </div>
 
         <div class="brushBlue border-r">
-          <li class="navBar__link mx-11 bg-ima"><a href="index.html"><a href="about.html" class="text-white">À
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="about.html"
+                class="text-white titleFont text-5xl">À
                 propos</a>
           </li>
         </div>
 
         <div class="brushOrange">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="contact.html" class="text-white">Contact</a></li>
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="contact.html"
+                class="text-white titleFont text-5xl">Contact</a></li>
         </div>
       </ul>
     </div>
@@ -44,32 +46,73 @@
   </header>
 
   <main class="containeur grid grid-cols-12 ">
-    <aside class="bg-[#2f3742] col-span-3 mr-10 rounded-br-2xl rounded-tr-2xl overflow-hidden">
-      <ul class="fixed mt-10 ml-5">
-        <li class="text-4xl text-white">
-          <a href="#Illustration">Illustration</a>
 
-          <ul>
-            <li class="text-3xl">
-              <a href="#Portrait">- Portrait</a>
-            </li>
-            <li class="text-3xl">
-              <a href="#Half/FullBody">- Half/Full Body</a>
-            </li>
-          </ul>
-        </li>
-        <li class="text-4xl text-white mt-5">
-          <a href="#MiseEnPage">Mise en page</a>
 
-      </ul>
-    </aside>
 
-    <div class="col-span-9 mr-10 ">
+    <div data-dial-init class="fixed end-6 bottom-6 group">
+      <div id="speed-dial-menu-default" class=" flex-col items-center hidden mb-4 space-y-2">
+        <a href="#Portrait">
+          <button type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <img src="img/eko1-rkzry6.jpg" alt="" class="h-10 w-10 rounded-4xl">
+            <span class="sr-only">Portrait</span>
+          </button>
+        </a>
+        <div id="tooltip-share" role="tooltip"
+          class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+          Portrait
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+
+        <a href="#Half/FullBody">
+          <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <img src="img/raccoon-rofvrx.jpg" alt="" class="h-10 w-10 rounded-4xl">
+            <span class="sr-only">Full/Half Body</span>
+          </button>
+        </a>
+        <div id="tooltip-print" role="tooltip"
+          class="absolute z-10 invisible inline-block min-w-[120px] px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+          Full/Half Body
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+        <a href="#MiseEnPage">
+          <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <img src="img/alchatmisteCrop.jpg" alt="" class="w-10 rounded-4xl overflow-hidden">
+            <span class="sr-only">Mise en page</span>
+          </button>
+        </a>
+        <div id="tooltip-download" role="tooltip"
+          class="absolute z-10 invisible inline-block min-w-[110px] px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+          Mise en page
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+
+      </div>
+
+      <button type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default"
+        aria-expanded="false"
+        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+        <svg class="w-5 h-5 transition-transform group-hover:rotate-45" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 1v16M1 9h16" />
+        </svg>
+        <span class="sr-only">Open actions menu</span>
+      </button>
+    </div>
+
+
+    <div class="col-span-12">
 
       <section id="Illustration">
 
         <section id="Portrait">
-          <h2 class="text-5xl text-white my-10">Portrait</h2>
+          <h2 class="text-5xl text-white my-10 robotoFont">Portrait</h2>
           <div class="grid grid-cols-12 gap-3">
             <img src="img/lucascolor-rkzryn.jpg" alt="Portrait d'un client" class="rounded-3xl col-span-4 row-span-2">
             <img src="img/mothernature1-rkzrzk.jpg" alt="Mère Nature" class="rounded-3xl col-span-4 row-span-2">
@@ -81,7 +124,7 @@
         </section>
 
         <section id="Half/FullBody">
-          <h2 class="text-5xl text-white my-10">Half/Full Body</h2>
+          <h2 class="text-5xl text-white my-10 robotoFont">Half/Full Body</h2>
           <div class="grid grid-cols-12 gap-3">
             <img src="img/megan-rkbr8u.png" alt="Commision personnage DnD" class="rounded-3xl col-span-4 row-span-3">
             <img src="img/mel-rkvuwx.png" alt="Character Sheet" class="rounded-3xl col-span-4 row-span-2">
@@ -97,7 +140,7 @@
       </section>
 
       <section id="MiseEnPage">
-        <h2 class="text-5xl text-white my-10">Mise en page</h2>
+        <h2 class="text-5xl text-white my-10 robotoFont">Mise en page</h2>
         <div class="grid grid-cols-12 gap-3">
           <img src="img/alchatmiste.jpg" alt="Mise en page d'une couverture de livre"
             class="rounded-3xl col-span-4 row-span-3">
@@ -107,49 +150,47 @@
 
       </section>
 
-
-      </section>
-
-
     </div>
   </main>
 
   <hr class="text-white my-10">
 
   <footer class="grid grid-cols-12">
-    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5">Retrouvez-moi sur</p>
-    <ul class="flex justify-between mx-20 col-span-12">
+    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5 robotoFont">Retrouvez-moi sur</p>
+    <ul class="flex justify-between mx-20 col-span-12 items-center">
       <li>
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
-          <img src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[150px]">
+          <img id="kofi" src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[150px]">
         </a>
       </li>
       <li>
         <a href="https://artistree.io/ekosysthem" target="_blank">
-          <img src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[200px]">
+          <img id="artistree" src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[200px]">
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/ekosysthem/" target="_blank">
-          <img src="img/icon/instagram.png" alt="Instagram Icon " class="w-[100px]">
+          <img id="insta" src="img/icon/instagram.png" alt="Instagram Icon " class="w-[100px]">
         </a>
       </li>
 
       <li>
         <a href="https://www.twitch.tv/ekosysthem" target="_blank">
-          <img src="img/icon/twitch.png" alt="twitch icon" class="w-[100px]">
+          <img id="twitch" src="img/icon/twitch.png" alt="twitch icon" class="w-[100px]">
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/@Ekosysthem" target="_blank">
-          <img src="img/icon/youtube.png" alt="Youtube icon" class="w-[100px]">
+          <img id="youtube" src="img/icon/youtube.png" alt="Youtube icon" class="w-[100px]">
         </a>
       </li>
     </ul>
   </footer>
 
-  <script src="scripts/carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="scripts/bounce.js"></script>
+
 </body>
 
 </html>

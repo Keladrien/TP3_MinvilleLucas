@@ -10,6 +10,7 @@
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style/css/style.css" />
 
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
@@ -19,22 +20,25 @@
     <div class=" col-span-12 m-auto">
       <ul class="flex my-6">
         <div class="brushPurple border-r">
-          <li class="navBar__link mx-11 "><a href="index.html" class="text-white">Acceuil</a></li>
+          <li class="navBar__link mx-11 "><a href="index.html" class="text-white titleFont text-5xl">Acceuil</a></li>
         </div>
 
         <div class="brushGreen border-r">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="folio.html " class="text-white">Portfolio</a>
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="folio.html "
+                class="text-white titleFont text-5xl">Portfolio</a>
           </li>
         </div>
 
         <div class="brushBlue border-r">
-          <li class="navBar__link mx-11 bg-ima"><a href="index.html"><a href="about.html" class="text-white">À
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="about.html"
+                class="text-white titleFont text-5xl">À
                 propos</a>
           </li>
         </div>
 
         <div class="brushOrange">
-          <li class="navBar__link mx-11"><a href="index.html"><a href="contact.html" class="text-white">Contact</a></li>
+          <li class="navBar__link  mx-11"><a href="index.html"><a href="contact.html"
+                class="text-white titleFont text-5xl">Contact</a></li>
         </div>
       </ul>
     </div>
@@ -46,34 +50,35 @@
     <form id="form" action="" novalidate onsubmit="return validateForm()">
       <fieldset class="border-white border-solid border-2 my-10 grid grid-cols-12 gap-3 rounded-2xl p-6">
         <legend>
-          <h2 class="text-2xl text-white mx-2">Contact</h2>
+          <h2 class="text-2xl robotoFont text-white mx-2">Contact</h2>
         </legend>
         <div class="inputControl col-span-6 ml-3">
           <label for="firstName" hidden>Prénom</label>
-          <input type="text" name="firstName" id="firstName" placeholder="Prénom" class="form__input">
+          <input type="text" name="firstName" id="firstName" placeholder="Prénom" class="form__input robotoFont">
           <div class="errorMessage"></div>
         </div>
 
         <div class="inputControl col-span-6 mr-3">
           <label for="lastName" hidden>Nom</label>
-          <input type="text" name="lastName" id="lastName" placeholder="Nom" class="form__input">
+          <input type="text" name="lastName" id="lastName" placeholder="Nom" class="form__input robotoFont">
           <div class="errorMessage"></div>
         </div>
 
         <div class="inputControl col-span-12 mx-3">
           <label for="mail" hidden>Courriel</label>
-          <input type="email" name="mail" id="mail" placeholder="Courriel" class="form__input">
+          <input type="email" name="mail" id="mail" placeholder="Courriel" class="form__input robotoFont">
           <div class="errorMessage"></div>
         </div>
 
         <div class="textAreaControl col-span-12 mx-3">
           <label for="textArea" hidden>Description</label>
-          <textarea name="textArea" id="textArea" placeholder="Description" class="form__input--textArea"></textarea>
+          <textarea name="textArea" id="textArea" placeholder="Description"
+            class="form__input--textArea robotoFont"></textarea>
           <div class="errorMessage"></div>
         </div>
 
         <div class="selectControl col-span-6 ml-3">
-          <select name="produit" id="produit" class="form__input">
+          <select name="produit" id="produit" class="form__input robotoFont">
             <option value="notSelected" disabled selected>Produit</option>
             <option value="Portrait">Portrait</option>
             <option value="Half/Full Body">Half/Full Body</option>
@@ -84,37 +89,76 @@
 
         <div class="inputControl col-span-6 col-start-7 mr-3">
           <label for="dateLimite" hidden>Date Limite</label>
-          <input type="text" name="dateLimite" id="dateLimite" placeholder="Date Limite" class=" form__input"
+          <input type="text" name="dateLimite" id="dateLimite" placeholder="Date Limite" class=" form__input robotoFont"
             onfocus="(this.type='date') (this.showPicker())">
           <div class="errorMessage"></div>
         </div>
 
         <div class="col-span-6 ml-3">
           <input type="radio" id="digital" name="radioType" checked>
-          <label for="digital" class="text-white">Digital</label>
+          <label for="digital" class="text-white robotoFont">Digital</label>
 
 
           <input type="radio" id="physical" name="radioType">
-          <label for="physical" class="text-white">Physique</label>
+          <label for="physical" class="text-white robotoFont">Physique</label>
         </div>
 
         <div class="conditionControl col-span-6 mr-3">
           <input type="checkbox" id="condition" name="condition">
-          <label for="condition" class="text-white">J'accepte les conditions</label>
+          <label for="condition" class="text-white robotoFont">J'accepte les conditions</label>
           <div class="errorMessage"></div>
         </div>
 
-        <input type="submit" value="Soumettre" class=" col-span-4 col-start-5 main__btn">
+        <input type="submit" value="Soumettre" class=" col-span-4 col-start-5 main__btn robotoFont">
       </fieldset>
     </form>
+
+
+
+    <!-- Modal toggle -->
+    <button id="modal" data-modal-target="static-modal" data-modal-toggle="static-modal" class="hidden">
+      Toggle modal
+    </button>
+
+    <!-- Main modal -->
+    <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              MERCI!
+            </h3>
+
+          </div>
+          <!-- Modal body -->
+          <div class="p-4 md:p-5 space-y-4">
+            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              Merci de m'avoir écrit, je vous recontacte pour votre projet dans les plus bref delais.
+            </p>
+
+          </div>
+          <!-- Modal footer -->
+          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <a id="modalBtn" data-modal-hide="static-modal" type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer">Retour
+              au formulaire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </main>
 
   <hr class="text-white my-10">
 
   <footer class="grid grid-cols-12">
-    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5">Retrouvez-moi sur</p>
-    <ul class="flex justify-between mx-20 col-span-12">
+    <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5 robotoFont">Retrouvez-moi sur</p>
+    <ul class="flex justify-between mx-20 col-span-12 items-center">
       <li>
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
@@ -145,6 +189,7 @@
     </ul>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="scripts/validation.js"></script>
 </body>
 

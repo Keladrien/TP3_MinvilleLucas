@@ -6,6 +6,8 @@ const textArea = document.getElementById("textArea");
 const produit = document.getElementById("produit");
 const dateLimite = document.getElementById("dateLimite");
 const condition = document.getElementById("condition");
+const modal = document.getElementById("modal");
+const modalBtn = document.getElementById("modalBtn");
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -24,6 +26,10 @@ const setSuccess = (element) => {
   inputControl.classList.add("success");
   inputControl.classList.remove("error");
 };
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
 
 const validateForm = () => {
   let noError = true;
@@ -112,6 +118,12 @@ const validateForm = () => {
     setSuccess(condition);
   }
 
-  console.log(produit.value);
-  return noError;
+  if (noError === true) {
+    modal.click();
+  }
+
+  modalBtn.addEventListener("click", (e) => {
+    location.replace("contact.html");
+    return noError;
+  });
 };
