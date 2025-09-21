@@ -1,10 +1,11 @@
 {
   "name": "Ekosysthem",
   "short_name": "Ekosysthem",
-  "start_url": "/index.html",
+  "start_url": "https://keladrien.github.io/TP3_MinvilleLucas/",
   "display": "standalone",
   "background_color": "#010409",
   "theme_color": "#010409",
+  
   "icons": [
     {
       "purpose": "maskable",
