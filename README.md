@@ -20,3 +20,6 @@ https://flowbite.com/docs/components/speed-dial/
 
 Modal pour la confirmation de formulaire :
 https://flowbite.com/docs/components/modal/
+
+NavBar :
+https://flowbite.com/docs/components/navbar/

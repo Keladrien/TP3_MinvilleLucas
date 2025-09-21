@@ -17,32 +17,51 @@
 </head>
 
 <body class="p-0 bg-[#010409]">
-  <header class="grid grid-cols-12 bg-[#161b22]">
-    <div class=" col-span-12 m-auto">
-      <ul class="flex my-6">
-        <div class="brushPurple border-r">
-          <li class="navBar__link mx-11 "><a href="index.html" class="text-white titleFont text-5xl">Acceuil</a></li>
-        </div>
+  <header class="grid grid-cols-12 bg-[#161b22] ">
 
-        <div class="brushGreen border-r">
-          <li class="navBar__link  mx-11"><a href="index.html"><a href="folio.html "
-                class="text-white titleFont text-5xl">Portfolio</a>
-          </li>
-        </div>
+    <nav class="bg-[#161b22] col-span-12">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="img/eko1-rkzry6.jpg" class="h-14 rounded-4xl" alt="Flowbite Logo" />
+          <span class="self-center text-6xl titleFont whitespace-nowrap text-white">Ekosysthem</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul>
+            <div class="brushPurple">
+              <li class="navBar__link ">
+                <a href="index.html" class="text-white titleFont text-3xl  ">Acceuil</a>
+              </li>
+            </div>
+            <div class="brushGreen">
+              <li class="navBar__link"><a href="index.html"><a href="folio.html "
+                    class="text-white titleFont text-3xl">Portfolio</a>
+              </li>
+            </div>
+            <div class="brushBlue ">
+              <li class="navBar__link"><a href="index.html"><a href="about.html" class="text-white titleFont text-3xl">À
+                    propos</a>
+              </li>
+            </div>
+            <div class="brushOrange ">
+              <li class="navBar__link"><a href="index.html"><a href="contact.html"
+                    class="text-white titleFont text-3xl">Contact</a></li>
+            </div>
 
-        <div class="brushBlue border-r">
-          <li class="navBar__link  mx-11"><a href="index.html"><a href="about.html"
-                class="text-white titleFont text-5xl">À
-                propos</a>
-          </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <div class="brushOrange">
-          <li class="navBar__link  mx-11"><a href="index.html"><a href="contact.html"
-                class="text-white titleFont text-5xl">Contact</a></li>
-        </div>
-      </ul>
-    </div>
+
 
   </header>
 

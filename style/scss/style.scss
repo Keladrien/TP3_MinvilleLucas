@@ -73,7 +73,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokePurple.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 
   &:hover::after {
@@ -103,7 +104,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeGreen.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 
   &:hover::after {
@@ -132,7 +134,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeBlue.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 
   &:hover::after {
@@ -161,7 +164,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeOrange.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 
   &:hover::after {

@@ -70,7 +70,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokePurple.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 }
 .brushPurple:hover::after {
@@ -97,7 +98,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeGreen.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 }
 .brushGreen:hover::after {
@@ -124,7 +126,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeBlue.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 }
 .brushBlue:hover::after {
@@ -151,7 +154,8 @@
   position: relative;
   display: inline-block;
   background: url("../../img/brushstrokeOrange.png") center/cover no-repeat;
-  padding: 50px;
+  background-size: 110%;
+  padding: 20px;
   overflow: hidden;
 }
 .brushOrange:hover::after {
@@ -262,7 +266,7 @@
   height: 1rem;
 }
 
-@keyframes bounceKeyframe {
+@keyframes bounce {
   0% {
     transform: scale(1);
   }
@@ -283,5 +287,5 @@
   }
 }
 .bounce {
-  animation: bounceKeyframe 1s ease;
+  animation: bounce 1s ease;
 }
