@@ -34,28 +34,35 @@
           </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul>
-            <div class="brushPurple">
-              <li class="navBar__link ">
+
+          <div class="brushPurple">
+            <ul>
+              <li>
                 <a href="index.html" class="text-white titleFont text-3xl  ">Acceuil</a>
               </li>
-            </div>
-            <div class="brushGreen">
-              <li class="navBar__link"><a href="index.html"><a href="folio.html "
-                    class="text-white titleFont text-3xl">Portfolio</a>
+            </ul>
+          </div>
+          <div class="brushGreen">
+            <ul>
+              <li><a href="folio.html " class="text-white titleFont text-3xl">Portfolio</a>
               </li>
-            </div>
-            <div class="brushBlue ">
-              <li class="navBar__link"><a href="index.html"><a href="about.html" class="text-white titleFont text-3xl">À
-                    propos</a>
+            </ul>
+          </div>
+          <div class="brushBlue ">
+            <ul>
+              <li>><a href="about.html" class="text-white titleFont text-3xl">À
+                  propos</a>
               </li>
-            </div>
-            <div class="brushOrange ">
-              <li class="navBar__link"><a href="index.html"><a href="contact.html"
-                    class="text-white titleFont text-3xl">Contact</a></li>
-            </div>
+            </ul>
+          </div>
 
-          </ul>
+          <div class="brushOrange ">
+            <ul>
+              <li><a href="contact.html" class="text-white titleFont text-3xl">Contact</a></li>
+            </ul>
+          </div>
+
+
         </div>
       </div>
     </nav>
@@ -71,11 +78,11 @@
     <div data-dial-init class="fixed end-6 bottom-6 group">
       <div id="speed-dial-menu-default" class=" flex-col items-center hidden mb-4 space-y-2">
         <a href="#Portrait">
-          <button type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="left"
+          <div data-tooltip-target="tooltip-share" data-tooltip-placement="left"
             class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
             <img src="img/eko1-rkzry6.jpg" alt="" class="h-10 w-10 rounded-4xl">
             <span class="sr-only">Portrait</span>
-          </button>
+          </div>
         </a>
         <div id="tooltip-share" role="tooltip"
           class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
@@ -85,11 +92,11 @@
 
 
         <a href="#Half/FullBody">
-          <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left"
+          <div data-tooltip-target="tooltip-print" data-tooltip-placement="left"
             class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
             <img src="img/raccoon-rofvrx.jpg" alt="" class="h-10 w-10 rounded-4xl">
             <span class="sr-only">Full/Half Body</span>
-          </button>
+          </div>
         </a>
         <div id="tooltip-print" role="tooltip"
           class="absolute z-10 invisible inline-block min-w-[120px] px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
@@ -98,11 +105,11 @@
         </div>
 
         <a href="#MiseEnPage">
-          <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left"
+          <div data-tooltip-target="tooltip-download" data-tooltip-placement="left"
             class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
             <img src="img/alchatmisteCrop.jpg" alt="" class="w-10 rounded-4xl overflow-hidden">
             <span class="sr-only">Mise en page</span>
-          </button>
+          </div>
         </a>
         <div id="tooltip-download" role="tooltip"
           class="absolute z-10 invisible inline-block min-w-[110px] px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
@@ -128,7 +135,7 @@
 
     <div class="col-span-12">
 
-      <section id="Illustration">
+      <div id="Illustration">
 
         <section id="Portrait">
           <h2 class="text-5xl text-white my-10 robotoFont">Portrait</h2>
@@ -156,7 +163,7 @@
 
         </section>
 
-      </section>
+      </div>
 
       <section id="MiseEnPage">
         <h2 class="text-5xl text-white my-10 robotoFont">Mise en page</h2>
@@ -175,19 +182,24 @@
   <hr class="text-white my-10">
 
   <footer class="grid grid-cols-12">
+    <button class=" text-lg main__btn robotoFont col-span-6 col-start-4 mb-10" hidden id="installBtn"
+      aria-label="Install">Installer
+      l'appli</button>
+
+
     <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5 robotoFont">Retrouvez-moi sur</p>
     <ul
       class="flex justify-between mx-20 col-span-8 col-start-3 items-center max-md:grid max-md:grid-cols-12 max-md:mx-0 max-md:justify-items-center max-md:">
       <li class="max-md:col-span-6">
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
-          <img id="kofi" src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[80px]
+          <img id="kofi" src="img/icon/ko-fi_icon.webp" alt="ko-fi Icon" class="w-[80px]
           max-md:mb-5">
         </a>
       </li>
       <li class="max-md:col-span-6">
         <a href="https://artistree.io/ekosysthem" target="_blank">
-          <img id="artistree" src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[130px] max-md:mb-5">
+          <img id="artistree" src="img/icon/artistree_icon.svg" alt="Artistree icon" class="w-[130px] max-md:mb-5">
         </a>
       </li>
       <li class="max-md:col-span-4">

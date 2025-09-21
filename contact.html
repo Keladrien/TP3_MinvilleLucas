@@ -34,28 +34,35 @@
           </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul>
-            <div class="brushPurple">
-              <li class="navBar__link ">
+
+          <div class="brushPurple">
+            <ul>
+              <li>
                 <a href="index.html" class="text-white titleFont text-3xl  ">Acceuil</a>
               </li>
-            </div>
-            <div class="brushGreen">
-              <li class="navBar__link"><a href="index.html"><a href="folio.html "
-                    class="text-white titleFont text-3xl">Portfolio</a>
+            </ul>
+          </div>
+          <div class="brushGreen">
+            <ul>
+              <li><a href="folio.html " class="text-white titleFont text-3xl">Portfolio</a>
               </li>
-            </div>
-            <div class="brushBlue ">
-              <li class="navBar__link"><a href="index.html"><a href="about.html" class="text-white titleFont text-3xl">À
-                    propos</a>
+            </ul>
+          </div>
+          <div class="brushBlue ">
+            <ul>
+              <li>><a href="about.html" class="text-white titleFont text-3xl">À
+                  propos</a>
               </li>
-            </div>
-            <div class="brushOrange ">
-              <li class="navBar__link"><a href="index.html"><a href="contact.html"
-                    class="text-white titleFont text-3xl">Contact</a></li>
-            </div>
+            </ul>
+          </div>
 
-          </ul>
+          <div class="brushOrange ">
+            <ul>
+              <li><a href="contact.html" class="text-white titleFont text-3xl">Contact</a></li>
+            </ul>
+          </div>
+
+
         </div>
       </div>
     </nav>
@@ -66,7 +73,7 @@
 
   <main class="containeur">
 
-    <form id="form" action="" novalidate onsubmit="return validateForm()">
+    <form id="form" action="contact.html" novalidate onsubmit="return validateForm()">
       <fieldset class="border-white border-solid border-2 my-10 grid grid-cols-12 gap-3 rounded-2xl p-6">
         <legend>
           <h2 class="text-2xl robotoFont text-white mx-2">Contact</h2>
@@ -146,8 +153,7 @@
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
           <!-- Modal header -->
-          <div
-            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-600">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
               MERCI!
             </h3>
@@ -155,14 +161,14 @@
           </div>
           <!-- Modal body -->
           <div class="p-4 md:p-5 space-y-4">
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <p class="text-base leading-relaxedtext-gray-400">
               Merci de m'avoir écrit, je vous recontacte pour votre projet dans les plus bref delais.
             </p>
 
           </div>
           <!-- Modal footer -->
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-            <a id="modalBtn" data-modal-hide="static-modal" type="button"
+          <div class="flex items-center p-4 md:p-5 border-t rounded-b border-gray-600">
+            <a id="modalBtn" data-modal-hide="static-modal"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer">Retour
               au formulaire</a>
           </div>
@@ -176,19 +182,24 @@
   <hr class="text-white my-10">
 
   <footer class="grid grid-cols-12">
+    <button class=" text-lg main__btn robotoFont col-span-6 col-start-4 mb-10" hidden id="installBtn"
+      aria-label="Install">Installer
+      l'appli</button>
+
+
     <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5 robotoFont">Retrouvez-moi sur</p>
     <ul
       class="flex justify-between mx-20 col-span-8 col-start-3 items-center max-md:grid max-md:grid-cols-12 max-md:mx-0 max-md:justify-items-center max-md:">
       <li class="max-md:col-span-6">
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
-          <img id="kofi" src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[80px]
+          <img id="kofi" src="img/icon/ko-fi_icon.webp" alt="ko-fi Icon" class="w-[80px]
           max-md:mb-5">
         </a>
       </li>
       <li class="max-md:col-span-6">
         <a href="https://artistree.io/ekosysthem" target="_blank">
-          <img id="artistree" src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[130px] max-md:mb-5">
+          <img id="artistree" src="img/icon/artistree_icon.svg" alt="Artistree icon" class="w-[130px] max-md:mb-5">
         </a>
       </li>
       <li class="max-md:col-span-4">
