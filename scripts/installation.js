@@ -1,5 +1,5 @@
 let deferredInstallPrompt = null;
-const installButton = document.getElementById("butInstall");
+const installButton = document.getElementById("installBtn");
 
 // Quand on clique sur le bouton
 installButton.addEventListener("click", installPWA);
@@ -38,5 +38,5 @@ function installPWA(evt) {
 window.addEventListener("appinstalled", logAppInstalled);
 
 function logAppInstalled(evt) {
-  console.log("📱 Application installée avec succès.", evt);
+  console.log("Application installée avec succès.", evt);
 }
