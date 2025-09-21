@@ -302,7 +302,7 @@
   }
 }
 
-@keyframes bounce {
+@keyframes bounceAnime {
   0% {
     transform: scale(1);
   }
@@ -324,5 +324,5 @@
 }
 
 .bounce {
-  animation: bounce 1s ease;
+  animation: bounceAnime 1s ease;
 }

@@ -67,7 +67,8 @@
   </header>
 
   <main>
-    <section class="grid grid-cols-12 bg-[url(img/mermaid-rkzrz4.jpg)] bg-center  bg-no-repeat h-[900px] m-10">
+    <section
+      class="grid grid-cols-12 bg-[url(img/mermaid-rkzrz4.jpg)] bg-center  bg-no-repeat h-[900px] xl:m-10 max-xl:mb-10">
       <div class="col-span-12 m-auto relative ">
         <div class="max-md:hidden">
           <h2 class="words text-5xl text-white robotoFont ">
@@ -90,11 +91,37 @@
       </div>
     </section>
 
-    <section class="containeur grid grid-cols-12 ">
-      <div class="col-span-12">
+
+    <section class="containeur grid grid-cols-12 gap-2 pb-10 xl:hidden">
+      <div class="col-span-4 col-start-3 max-md:col-span-6 max-md:col-start-1">
+        <img src="img/lucascolor-rkzryn.jpg" alt="Portrait d'un client"
+          class=" rounded-2xl w-[100%] flex justify-center items-center">
+      </div>
+
+
+      <div class="col-span-4 max-md:col-span-6">
+        <img src="img/raccoon-rofvrx.jpg" alt="Projet personelles"
+          class=" rounded-2xl w-[100%] flex justify-center items-center">
+      </div>
+
+      <div class="col-span-4 col-start-3 max-md:col-span-6 max-md:col-start-1">
+        <img src="img/eko1-rkzry6.jpg" alt="Autoportrait"
+          class=" rounded-2xl w-[100%] flex justify-center items-center">
+      </div>
+
+      <div class="col-span-4 max-md:col-span-6">
+
+        <img src="img/supra-rkzrwb.jpg" alt="Supra bring back pop-up"
+          class=" rounded-2xl w-[100%] flex justify-center items-center">
+      </div>
+    </section>
+
+
+    <section class="containeur grid grid-cols-12 max-xl:hidden">
+      <div class="col-span-6 col-start-4">
         <div class="w-full relative">
           <div class="swiper multiple-slide-carousel swiper-container relative">
-            <div class="swiper-wrapper mb-16 max-xl:w-[50%]">
+            <div class="swiper-wrapper mb-2 max-xl:w-[50%]">
               <div class="swiper-slide ">
                 <div class=" rounded-2xl h-96 flex justify-center items-center">
                   <img src="img/lucascolor-rkzryn.jpg" alt="Portrait d'un client">
@@ -134,8 +161,8 @@
 
     <section class="bg-[#161b22] grid grid-cols-12 w-fit">
       <div class=" col-span-6 col-start-4">
-        <h2 class="text-white text-4xl text-center my-10 robotoFont">À propos</h2>
-        <p class="text-white text-2xl text-center mb-10 robotoFont">Lorem ipsum dolor, sit amet consectetur adipisicing
+        <h2 class="text-white text-2xl text-center my-10 robotoFont">À propos</h2>
+        <p class="text-white text-sm text-center mb-10 robotoFont">Lorem ipsum dolor, sit amet consectetur adipisicing
           elit.
           Impedit
           suscipit cum vel
@@ -151,33 +178,34 @@
 
   <footer class="grid grid-cols-12">
     <p class="text-3xl text-white pb-10 text-center col-span-4 col-start-5 robotoFont">Retrouvez-moi sur</p>
-    <ul class="flex justify-between mx-20 col-span-12 items-center">
-      <li>
+    <ul
+      class="flex justify-between mx-20 col-span-8 col-start-3 items-center max-md:grid max-md:grid-cols-12 max-md:mx-0 max-md:justify-items-center max-md:">
+      <li class="max-md:col-span-6">
         <a href="https://ko-fi.com/ekosysthem?__RequestVerificationToken=hv99T1KIBhpyy4dywN032ZB1w7hEXDReanDUzDTW0Fs2hKsvxoP-02kcWnk-5rOssF6AtJfJTKtau12IZxfKuMLhFhIgG7p9tIu0-j-Ye9c1"
           target="_blank">
-          <img id="kofi" src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[150px]
-          max-md:w-[80px]">
+          <img id="kofi" src="img/icon/ko-fi icon.webp" alt="ko-fi Icon" class="w-[80px]
+          max-md:mb-5">
         </a>
       </li>
-      <li>
+      <li class="max-md:col-span-6">
         <a href="https://artistree.io/ekosysthem" target="_blank">
-          <img id="artistree" src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[200px] max-md:w-[130px]">
+          <img id="artistree" src="img/icon/artistree icon.svg" alt="Artistree icon" class="w-[130px] max-md:mb-5">
         </a>
       </li>
-      <li>
+      <li class="max-md:col-span-4">
         <a href="https://www.instagram.com/ekosysthem/" target="_blank">
-          <img id="insta" src="img/icon/instagram.png" alt="Instagram Icon " class="w-[100px] max-md:w-[50px]">
+          <img id="insta" src="img/icon/instagram.png" alt="Instagram Icon " class="w-[50px]">
         </a>
       </li>
 
-      <li>
+      <li class="max-md:col-span-4">
         <a href="https://www.twitch.tv/ekosysthem" target="_blank">
-          <img id="twitch" src="img/icon/twitch.png" alt="twitch icon" class="w-[100px] max-md:w-[50px]">
+          <img id="twitch" src="img/icon/twitch.png" alt="twitch icon" class="w-[50px]">
         </a>
       </li>
-      <li>
+      <li class="max-md:col-span-4">
         <a href="https://www.youtube.com/@Ekosysthem" target="_blank">
-          <img id="youtube" src="img/icon/youtube.png" alt="Youtube icon" class="w-[100px] max-md:w-[50px]">
+          <img id="youtube" src="img/icon/youtube.png" alt="Youtube icon" class="w-[50px]">
         </a>
       </li>
     </ul>
