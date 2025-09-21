@@ -1,8 +1,10 @@
 {
   "name": "Ekosysthem",
   "short_name": "Ekosysthem",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "display": "standalone",
+  "background_color": "#010409",
+  "theme_color": "#010409",
   "icons": [
   {
     "purpose": "maskable",
