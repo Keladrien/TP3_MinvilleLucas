@@ -1,42 +1,39 @@
-let deferredInstallPrompt = null;
-const installButton = document.getElementById("installBtn");
+let deferredPrompt;
+const installBtn = document.getElementById("installBtn");
 
-// Quand on clique sur le bouton
-installButton.addEventListener("click", installPWA);
+// Par défaut on cache le bouton
+installBtn.style.display = "none";
 
-// Écouter l’événement `beforeinstallprompt`
-window.addEventListener("beforeinstallprompt", saveBeforeInstallPromptEvent);
-
-/**
- * Sauvegarde l’événement et affiche le bouton
- */
-function saveBeforeInstallPromptEvent(evt) {
-  deferredInstallPrompt = evt;
-  installButton.removeAttribute("hidden"); // Affiche le bouton
-}
-
-/**
- * Lance le prompt d’installation
- */
-function installPWA(evt) {
-  deferredInstallPrompt.prompt();
-  // Masquer le bouton, on ne peut pas appeler deux fois
-  evt.srcElement.setAttribute("hidden", true);
-
-  // Gérer la réponse de l’utilisateur
-  deferredInstallPrompt.userChoice.then((choice) => {
-    if (choice.outcome === "accepted") {
-      console.log(" Utilisateur a accepté l’installation", choice);
-    } else {
-      console.log(" Utilisateur a refusé l’installation", choice);
-    }
-    deferredInstallPrompt = null;
+// Détecte si l'appli est déjà installée
+if (
+  window.matchMedia("(display-mode: standalone)").matches ||
+  window.navigator.standalone === true
+) {
+  installBtn.style.display = "none";
+} else {
+  // Attend l'événement beforeinstallprompt
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = "block"; // Affiche le bouton
   });
-}
 
-// Détecter si l’installation se fait via le menu Chrome
-window.addEventListener("appinstalled", logAppInstalled);
+  installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`Résultat utilisateur: ${outcome}`);
 
-function logAppInstalled(evt) {
-  console.log("Application installée avec succès.", evt);
+    if (outcome === "accepted") {
+      console.log("L'utilisateur a installé l'application");
+      installBtn.style.display = "none"; // Cache le bouton
+    }
+    deferredPrompt = null;
+  });
+
+  // Cache aussi le bouton si l'appli est installée après coup
+  window.addEventListener("appinstalled", () => {
+    console.log("PWA installée !");
+    installBtn.style.display = "none";
+  });
 }
