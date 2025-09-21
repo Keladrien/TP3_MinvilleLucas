@@ -5,7 +5,14 @@
   "display": "standalone",
   "background_color": "#010409",
   "theme_color": "#010409",
-  
+  "screenshots": [
+    {
+      "src": "img/Capture.PNG",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ],
   "icons": [
     {
       "purpose": "maskable",
