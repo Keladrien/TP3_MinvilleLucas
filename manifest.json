@@ -10,7 +10,7 @@
       "src": "img/Capture.PNG",
       "sizes": "1904x955",
       "type": "image/png",
-      "form_factor": "wide"
+      "platform": "wide"
     }
   ],
   "icons": [
